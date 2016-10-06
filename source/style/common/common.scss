@@ -1,0 +1,46 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-size: em(16px);
+}
+
+header,
+footer {
+	flex: 0 0 auto;
+}
+
+section {
+	flex: 1 0 auto;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+a, a:hover, a:focus, a:active {
+	color: #fff;
+	text-decoration: none;
+	font-family: "RobotoMedium", sans-serif;
+
+}
+
+.container {
+	width: 1920px;
+}
+
+h1 {
+	color: #fff;
+	font-family: "RobotoMedium", sans-serif;
+}
+
+p {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: em(16px);
+}

@@ -1,0 +1,23 @@
+.header__welcome {
+	background-color: #3C5848;
+}
+
+.header__welcome-btn {
+	margin: 25px 100px;
+	display: block;
+	float: right;
+}
+
+.header__welcome-btn {
+	padding: 15px 30px;
+	background-color: rgba(255,255,255,.0);
+	border: 1px solid #fff;
+	border-radius: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.header__welcome-btn:hover {
+	background-color: #4e8839;
+	border: #7ea62e 1px solid;
+}
