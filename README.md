@@ -1,12 +1,12 @@
-#Учебная сборка Loftschool (выпускной проект №1) 
+#Выпускной проект №1 Loftschool
 Ilushenko Ann
 
-Stack:
- - Gulp 4.0
- 
-Done:
+Как установить мой проект:
 
 #1
-1. task "copy.fonts.js"
-2. task "gulp.spritesmith"
+1. git clone git.url https://github.com/anyanyani/Ann 
+2. cd Ann
+3. bower i
+4. npm i
+5. gulp
 

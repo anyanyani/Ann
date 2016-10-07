@@ -1,3 +1,6 @@
+@import 'common/common';
+
+
 .welcome__img {
 	background-image: url(../img/avatar.jpg);
 	width: 145px;
@@ -12,9 +15,6 @@
 	background-size: cover;
 	background-position: top center;
 	min-height: 700px;
-}
-
-.main__welcome {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -51,7 +51,7 @@
 }
 
 .welcome__social-item li:hover {
-	background-color: #4e8839;
+	background-color: $btn-dark;
 }
 
 .welcome__social-wrap a {
@@ -67,14 +67,14 @@
 }
 
 .welcome__menu-item {
-	background-color: #6c9c5a;
+	background-color: $btn;
 	margin: 0;
 	padding: 0;
 
 }
 
 .welcome__menu-item li:hover {
-	background-color: #477e38;
+	background-color: $btn-dark;
 }
 
 .welcome__menu-item li {

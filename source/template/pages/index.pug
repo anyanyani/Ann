@@ -7,15 +7,15 @@ block variables
 block content
 	header.header__welcome.container
 		button.header__welcome-btn
-			a(href="#" target="_blank") Авторизация
+			a(href="#" target="_blank") Log in
 
 	section.main__welcome.container
 		.wrapper__welcome-container
 			.welcome__img-wrap
 				.welcome__img
 			.welcome__text-wrap
-				h1 Илюшенко Анна
-				p Личный сайт веб разработчика
+				h1 Ann Ilushenko
+				p person web-site
 			.welcome__social-wrap
 				ul.welcome__social-item
 					li.welcome__social-vk
@@ -27,11 +27,37 @@ block content
 			.welcome__menu-wrap
 				ul.welcome__menu-item
 					li.welcome__menu-works
-						a(href="#" target="_blank") Мои работы
+						a(href="#" target="_blank") Portfolio
 					li.welcome__menu-about
-						a(href="#" target="_blank") Обо мне
+						a(href="#" target="_blank") About
 					li.welcome__menu-blog
-						a(href="#" target="_blank") Блог
+						a(href="#" target="_blank") Blog
+		.wrapper__autorize-container#autorize
+			form.autorize__form
+				h2 Autorisation
+				.autorize__input-wrap
+					label
+						input(type="text", name="Логин", placeholder="Логин")
+					label
+						input(type="text", name="Пароль", placeholder="Пароль")
+				.autorize__checkbox-wrap
+					input#check1(type="checkbox", name="check")
+					label(for="check1") Я человек
+				.autorize__radio-wrap
+					input#yes1(type="radio")
+					label(for="yes1") Да
+					input#no1(type="radio")
+					label(for="no1") Не 
+			.welcome__menu-wrap
+				ul.autorize__menu-item
+					li.welcome__menu-works
+						a(href="#" target="_blank") На главную
+					li.welcome__menu-about
+						a(href="#" target="_blank") Войти
+
+
+
+
 
 	footer.footer.container
 		.footer__copyright &copy; Аня Илюшенко | создано с любовью в LoftSchool | 2016

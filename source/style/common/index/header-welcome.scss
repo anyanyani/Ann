@@ -1,5 +1,5 @@
 .header__welcome {
-	background-color: #3C5848;
+	background-color: $main-dark;
 }
 
 .header__welcome-btn {
@@ -13,11 +13,10 @@
 	background-color: rgba(255,255,255,.0);
 	border: 1px solid #fff;
 	border-radius: 30px;
-	font-weight: bold;
 	cursor: pointer;
 }
 
 .header__welcome-btn:hover {
-	background-color: #4e8839;
+	background-color: $btn-dark;
 	border: #7ea62e 1px solid;
 }
