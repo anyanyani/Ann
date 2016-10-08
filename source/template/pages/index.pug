@@ -10,50 +10,55 @@ block content
 			a(href="#" target="_blank") Log in
 
 	section.main__welcome.container
-		.wrapper__welcome-container
-			.welcome__img-wrap
-				.welcome__img
-			.welcome__text-wrap
-				h1 Ann Ilushenko
-				p person web-site
-			.welcome__social-wrap
-				ul.welcome__social-item
-					li.welcome__social-vk
-						a(href="#" target="_blank") Vk
-					li.welcome__social-git
-						a(href="#" target="_blank") Git
-					li.welcome__social-in
-						a(href="#" target="_blank") Ln
-			.welcome__menu-wrap
-				ul.welcome__menu-item
-					li.welcome__menu-works
-						a(href="#" target="_blank") Portfolio
-					li.welcome__menu-about
-						a(href="#" target="_blank") About
-					li.welcome__menu-blog
-						a(href="#" target="_blank") Blog
-		.wrapper__autorize-container#autorize
-			form.autorize__form
-				h2 Autorisation
-				.autorize__input-wrap
-					label
-						input(type="text", name="Логин", placeholder="Логин")
-					label
-						input(type="text", name="Пароль", placeholder="Пароль")
-				.autorize__checkbox-wrap
-					input#check1(type="checkbox", name="check")
-					label(for="check1") Я человек
-				.autorize__radio-wrap
-					input#yes1(type="radio")
-					label(for="yes1") Да
-					input#no1(type="radio")
-					label(for="no1") Не 
-			.welcome__menu-wrap
-				ul.autorize__menu-item
-					li.welcome__menu-works
-						a(href="#" target="_blank") На главную
-					li.welcome__menu-about
-						a(href="#" target="_blank") Войти
+		.main__welcome-bg
+			.wrapper__welcome
+				.welcome__img-wrap
+					.welcome__img
+				.welcome__text-wrap
+					h1 Ann Ilushenko
+					p персональный сайт веб-разработчика
+				.welcome__social-wrap
+					ul.welcome__social-item
+						li.welcome__social-vk
+							a(href="#" target="_blank") Vk
+						li.welcome__social-git
+							a(href="#" target="_blank") Git
+						li.welcome__social-in
+							a(href="#" target="_blank") Ln
+				.welcome__menu-wrap
+					nav.nav-welcome
+						ul.welcome__menu-item
+							li.welcome__menu-works
+								a(href="#" target="_blank") Works
+							li.welcome__menu-about
+								a(href="#" target="_blank") About
+							li.welcome__menu-blog
+								a(href="#" target="_blank") Blog
+			.wrapper__login
+				form.login__form
+					h2 Авторизация
+					.login__input-wrap
+						label
+							input(type="text", name="Логин", placeholder="Логин")
+						label
+							input(type="text", name="Пароль", placeholder="Пароль")
+					.login__checkbox-wrap
+						input#check1(type="checkbox", name="check")
+						label(for="check1") 
+							span
+							p Я человек
+					.login__radio-wrap
+						p Вы точно не робот?
+						input#yes1(type="radio")
+						label(for="yes1") Да
+						input#no1(type="radio")
+						label(for="no1") Не 
+				.welcome__menu-wrap
+					ul.login__menu-item
+						li.welcome__menu-works
+							a(href="#" target="_blank") На главную
+						li.welcome__menu-about
+							a(href="#" target="_blank") Войти
 
 
 
