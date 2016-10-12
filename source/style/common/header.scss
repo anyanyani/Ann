@@ -1,0 +1,77 @@
+.header {
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	position: relative;
+	height: 620px;
+	width: 100%;
+	margin: 0 auto;
+	background: linear-gradient(to bottom, rgba(#000,.4) 0%, rgba(#fff,0) 40%), url("../img/bg.jpg") center center no-repeat;
+	background-size: cover;
+
+	&:before,&:after {
+		position: absolute;
+		bottom: 0;
+		display: block;
+		width: 0;
+		height: 0;
+		content: "";
+		border-style: solid;
+		z-index: 0;
+  }
+
+	&:before {
+		left: 0;
+		border-width: 9vw 0 0 53vw;
+		border-color: transparent transparent transparent #f8f9f5;
+	}
+
+	&:after {
+		right: 0;
+		border-width: 0 0 9vw 53vw;
+		border-color: transparent transparent #f8f9f5 transparent;
+	}
+}
+
+.icon-hamburger {
+	width: 40px;
+	height:40px;
+	margin-right: 20px;
+	margin-top: 25px;
+	fill: rgba(#fff,.7);
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__body {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: '';
+		background-position: center no-repeat;
+		background-size: 100% 100%;
+		width: 65%;
+		height: 65%;
+		left: 50%;
+		top: 80px;
+		opacity: 0.12;
+		z-index: -1;
+	}
+
+	.icon {
+		&-portf_arrow_down {
+			fill: rgba(#fff,.7);
+			position: absolute;
+			width: 30px;
+			left: 49%;
+			top: 68%;
+		}
+	}
+
+}
+

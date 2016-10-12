@@ -1,0 +1,16 @@
+extends ../_template
+include ../mixins/_svg
+include ../mixins/_social
+
+block variables
+	- var title = 'Мои работы'
+
+block content
+	header.header
+		.header-top
+			+social
+			+icon("hamburger")
+		section.header__body
+			include ../parts/_person
+			+icon("portf_arrow_down")
+

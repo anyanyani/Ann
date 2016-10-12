@@ -1,0 +1,41 @@
+.login__radio {
+	margin-bottom: 35px;
+
+	p {
+		display: block;
+		color: rgba(#fff,.8);
+		font-family: "RobotoMedium", sans-serif;
+	}
+}
+
+.radio {
+	&__label {
+		padding-right: 20px;
+		margin-left: 10px;
+
+		&:before {
+			border-radius: 10px;
+		}
+	}
+
+	&__input {
+		display: none;
+
+		&:checked + .radio__label:before {
+			content: '\2022';
+			color: $btn;
+			font-size: 30px;
+			display: inline;
+			text-align: center;
+			line-height: 19px;
+		}
+
+		&:checked + .radio__label {
+			color: $btn;
+		}
+
+		label {
+			color: rgba(#fff,.8);
+		}
+	}
+}

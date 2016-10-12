@@ -1,4 +1,12 @@
+@import 'common/index/welcome';
 @import 'common/index/copyright';
-@import 'common/index/main-welcome';
-@import 'common/index/header-welcome';
-@import 'common/index/main-login';
+
+@import 'common/index/_login-input';
+@import 'common/index/_checkbox';
+@import 'common/index/_radio';
+@import 'common/index/_welcome-menu';
+
+@import 'common/_vars';
+@import 'common/_social';
+@import 'common/_person';
+

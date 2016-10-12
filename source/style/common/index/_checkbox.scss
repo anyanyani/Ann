@@ -1,0 +1,51 @@
+.login__checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 40px;
+	height: 20px;
+}
+
+.icon-check {
+	position: absolute;
+	top: 13px;
+	left: 10px;
+
+	width: 10px;
+	height: 10px;
+
+	fill: #fff;
+	display: none;
+}
+
+.checkbox__input {
+	position: absolute;
+	top: 12px;
+	left: 90px;
+	opacity: 0;
+	width: 20px;
+	height: 20px;
+
+	&:checked ~ .checkbox__label .icon-check {
+		display: inline;
+	}
+}
+
+.checkbox__label {
+	display: flex;
+	justify-content: flex-end;
+	color: rgba(#fff,.8);
+	height: 40px;
+	width: 120px;
+	padding: 10px;
+	margin-top: 33px;
+}
+
+.checkbox__label:before {
+	position: absolute;
+	top: 9px;
+	left: 5px;
+	background-color: $btn;
+	border-radius: 2px;
+}

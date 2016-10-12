@@ -1,0 +1,13 @@
+mixin input(type, id, val, svgid)
+	input.form__input(type= type, name= id, id= id, placeholder= val,autocomplete="off")
+	label.form__label(for= id)
+		+icon(svgid)
+
+mixin checkbox(name, id, val, label, svgid)
+	input.checkbox__input(type="checkbox", name= name, id= id, value= val)
+	label.control.checkbox__label(for= id)= label
+		+icon(svgid)
+
+mixin radio(name, id, val, label)
+	input.radio__input(type="radio", name= name, id= id, value= val)
+	label.control.radio__label(for= id)= label

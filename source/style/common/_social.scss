@@ -1,0 +1,29 @@
+.social {
+    
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 35px 0;
+  }
+
+  &__link {
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+
+    &:hover svg {
+        fill: $btn;
+      }
+
+    &--login {
+      fill: rgba(#fff,.7);
+    }
+
+    svg {
+      width: 32px;
+      height: 25px;
+    } 
+  }
+}

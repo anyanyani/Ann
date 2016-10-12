@@ -1,0 +1,21 @@
+.person {
+	&__img {
+		width: 145px;
+		height: 145px;
+		border-radius: 50% 50%;
+		overflow: hidden;
+
+		&-wrap {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			padding-top: 40px;	
+		}
+	}
+
+	&__text {
+		color: rgba(#fff,.9);
+		line-height: 1;
+		text-align: center;
+	}
+}

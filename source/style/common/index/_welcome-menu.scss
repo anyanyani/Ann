@@ -1,0 +1,36 @@
+.welcome__btn {
+	background-color: $btn;
+	overflow: hidden;
+	margin: 0;
+
+	&-list{
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			padding: 17px 31px;
+			text-align: center;
+			border-left: 3px solid rgba(#a0b99e,.6);
+			cursor: pointer;
+			margin-left: -4px;
+
+			&:hover {
+				background-color: $btn-dark;
+			}
+
+			&:first-child {
+				border-left: none;
+			}
+		}
+
+		.welcome__btn-item {
+			display: inline-block;
+			padding: 17px 62px;
+			text-align: center;
+			border-left: 3px solid rgba(#a0b99e,.6);
+			cursor: pointer;
+			margin-left: -5px;
+		}
+	}
+}

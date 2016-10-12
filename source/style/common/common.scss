@@ -1,15 +1,21 @@
 @import 'common/_vars';
 
+html {
+	box-sizing: border-box;
+}
+
 html,
 body {
 	height: 100%;
 }
 
 body {
-	margin: 0;
 	display: flex;
 	flex-direction: column;
-	font-size: em(16px);
+	font-size: 16px;
+	height: 100%;
+	position: relative;
+	min-height: 330px;
 }
 
 header,
@@ -33,9 +39,53 @@ a, a:hover, a:focus, a:active {
 
 }
 
-.container {
-	width: 1920px;
+*,*:before, *:after {
+	box-sizing: inherit;
 }
+
+.container {
+	width: 1800px;
+	margin-right: auto;
+	margin-left: auto;
+
+	.clearfix {
+		&:before, &:after {
+			display: table;
+			content: " ";
+		}
+		&:after {
+			clear: both;
+		}
+	}
+}
+
+form {
+  text-align: center;
+  color: #fff;
+}
+
+.control {
+  display: inline-block;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+  }
+}
+
+
 
 h1 {
 	color: #fff;
@@ -53,4 +103,5 @@ h2 {
 p {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 1em;
+	color: #fff;
 }

@@ -1,69 +1,47 @@
 extends ../_template
-include ../mixins
+include ../mixins/_svg
+include ../mixins/_inputs
+include ../mixins/_social
 
 block variables
 	- var title = 'Аня Илюшенко'
 
 block content
-	header.header__welcome.container
-		button.header__welcome-btn
-			a(href="#" target="_blank") Log in
-
-	section.main__welcome.container
-		.main__welcome-bg
-			.wrapper__welcome
-				.welcome__img-wrap
-					.welcome__img
-				.welcome__text-wrap
-					h1 Ann Ilushenko
-					p персональный сайт веб-разработчика
-				.welcome__social-wrap
-					ul.welcome__social-item
-						li.welcome__social-vk
-							a(href="#" target="_blank") Vk
-						li.welcome__social-git
-							a(href="#" target="_blank") Git
-						li.welcome__social-in
-							a(href="#" target="_blank") Ln
-				.welcome__menu-wrap
-					nav.nav-welcome
-						ul.welcome__menu-item
-							li.welcome__menu-works
-								a(href="#" target="_blank") Works
-							li.welcome__menu-about
-								a(href="#" target="_blank") About
-							li.welcome__menu-blog
-								a(href="#" target="_blank") Blog
-			.wrapper__login
-				form.login__form
+	section.welcome
+		nav.welcome__nav
+			.welcome__nav-login
+				a(href="#" target="_blank") Log in
+		.welcome__section
+			.welcome__section-wrap
+				include ../parts/_person
+				+social
+				nav.welcome__btn
+					ul.welcome__btn-list
+						li
+							a(href="/works.html" target="_blank") Мои работы
+						li
+							a(href="#" target="_blank") Обо мне
+						li
+							a(href="#" target="_blank") Блог
+			.welcome__section-wrap
+				form.login
 					h2 Авторизация
-					.login__input-wrap
-						label
-							input(type="text", name="Логин", placeholder="Логин")
-						label
-							input(type="text", name="Пароль", placeholder="Пароль")
-					.login__checkbox-wrap
-						input#check1(type="checkbox", name="check")
-						label(for="check1") 
-							span
-							p Я человек
-					.login__radio-wrap
+					.login__input
+						+input("text", "logged", "Логин", "log_in")
+					.login__input
+						+input("password", "password", "Пароль", "pass")
+					.login__checkbox
+						+checkbox("human", "checkbox", "I am a human", "Я человек","check")
+					.login__radio
 						p Вы точно не робот?
-						input#yes1(type="radio")
-						label(for="yes1") Да
-						input#no1(type="radio")
-						label(for="no1") Не 
-				.welcome__menu-wrap
-					ul.login__menu-item
-						li.welcome__menu-works
+						+radio("robot", "approved" , "Yes", "Да" )
+						+radio("robot", "robot" , "No", "Не уверен" )
+				nav.welcome__btn
+					ul.welcome__btn-list
+						li.welcome__btn-item
 							a(href="#" target="_blank") На главную
-						li.welcome__menu-about
+						li.welcome__btn-item
 							a(href="#" target="_blank") Войти
-
-
-
-
-
-	footer.footer.container
+	footer.footer-welcome
 		.footer__copyright &copy; Аня Илюшенко | создано с любовью в LoftSchool | 2016
 
