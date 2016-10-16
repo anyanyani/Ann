@@ -1,0 +1,76 @@
+extends ../_template
+include ../mixins/_svg
+include ../mixins/_social
+
+block variables
+	- var title = 'Обо мне'
+
+block content
+	include ../parts/_header
+	section.about
+		.about__wrap
+			.about__left
+				.about__left-title
+					h2 Обо мне
+					+icon("about_header")
+				.about__left-content
+					.about__left-img
+						img(src="assets/img/avatar-big.jpg")
+					.about__left-text
+						h3 Кто я
+						p Я веб разработчик из Новосибирска. Мне 24 года. 
+						p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+						p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+			.about__right
+				.about__right-description
+					h3 Чем я могу быть полезна
+					p Больше всего меня привлекет Frontend разработка, но я также знакома и могу решать не сложные задачи на Backend. Но давайте по порядку.
+				.about__right-skills
+					.about__right-skills-item
+						h4 Frontend
+						.about__right-skills-wrap
+							.about__right-skills-content
+								p html 5
+							.about__right-skills-content
+								p css 3
+							.about__right-skills-content
+								p Javascript
+					.about__right-skills-item
+						h4 Backend
+						.about__right-skills-wrap
+							.about__right-skills-content
+								p php
+							.about__right-skills-content
+								p mysql
+							.about__right-skills-content
+								p node.js
+					.about__right-skills-item
+						h4 Workflow
+						.about__right-skills-wrap
+							.about__right-skills-content
+								p gulp
+							.about__right-skills-content
+								p git
+							.about__right-skills-content
+								p bower
+			.about__map
+				.about__map-content
+					.about__map-contact
+						.about__map-contact-title
+							h4 Контакты
+						ul.about__map-contact-list
+							li
+								+icon("skype")
+								p ann.ilu
+							li
+								+icon("envelope")
+								p ilushenko.anna@yandex.ru
+							li
+								+icon("phone")
+								p +7 (913) 010 42-52
+							li
+								+icon("map_marker")
+								p Новосибирск
+										
+
+	include ../parts/_footer

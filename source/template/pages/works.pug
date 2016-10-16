@@ -6,13 +6,7 @@ block variables
 	- var title = 'Мои работы'
 
 block content
-	header.header
-		.header-top
-			+social
-			+icon("hamburger")
-		section.header__body
-			include ../parts/_person
-			+icon("portf_arrow_down")
+	include ../parts/_header
 	section.works
 		.works__head
 			h2.works__head-title Мои работы

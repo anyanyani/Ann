@@ -1,0 +1,13 @@
+.about {
+	position: relative;
+	display: block;
+	margin-top: 0;
+	padding-top: 20px;
+	background-color: #F8F9F5;
+
+	&__wrap {
+		max-width: 1800px;
+		margin: 0 auto;
+		min-height: 650px;
+	}
+}
