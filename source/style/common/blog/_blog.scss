@@ -1,18 +1,17 @@
 .blog {
-	position: relative;
-	display: block;
 	margin-top: 0;
 	padding-top: 20px;
 	background-color: #F8F9F5;
 
 	&__wrap {
 		max-width: 1800px;
+		display: inline-block;
 		margin: 0 auto;
 		min-height: 650px;
 	}
 
 	&__left {
-		width: 30%;
+		width: 20%;
 		padding: 0 20px;
 		float: left;
 
@@ -22,20 +21,51 @@
 
 			li {
 				display: inline-block;
-				padding-top: 10px;
 				height: 40px;
 
 				a {
 					display: block;
 					padding-right: 15px;
 					color: #566358;
+					line-height: 1.4;
 
 					&:active {
 						border-right: 3px solid #6c9c5a;
 						color: #6c9c5a;
 						font-family: "RobotoBold", sans-serif;
+
 					}
 				}
+			}
+		}
+	}
+
+	&__right {
+		width: 75%;
+		padding: 0 20px;
+		float: right;
+		display: block;
+
+		&-post {
+			margin-bottom: 65px;
+			width: 990px;
+
+			h2 {
+				margin: 0 0 20px 0;
+				color: #566358;
+				font-family: "SansusWebissimoRegular", sans-serif;
+				text-transform: none;	
+			}
+
+			span {
+				color: #6c9c5a;
+				margin-bottom: 25px;
+			}
+
+			p {
+				color: #566358;
+				font-family: "RobotoRegular", sans-serif;
+				line-height: 1.5;	
 			}
 		}
 	}
