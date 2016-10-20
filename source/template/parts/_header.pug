@@ -1,7 +1,10 @@
 header.header
-	.header__top
-		+social
-		+icon("hamburger")
+	.container
+		.header__top
+			.header__top-social
+				+social
+			nav.header__top-mnu
+				+icon("hamburger")
 	section.header__body
 		+icon("portfolio_header")
 		include ../parts/_person

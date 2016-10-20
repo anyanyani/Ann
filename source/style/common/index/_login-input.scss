@@ -51,15 +51,14 @@
 		background-color: $inputbgc;
 		border: none;
 
-		.icon
-			&-login, &-password {
+		.icon {
 				position: absolute;
 				top: 27%;
 				right: 20%;
 				width: 20px;
 				height: 20px;
 
-				fill: $fontgray;
+				fill: #c4cbcd;
 		}
 	}
 }
