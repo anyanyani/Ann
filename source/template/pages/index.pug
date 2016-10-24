@@ -10,7 +10,7 @@ block content
 	section.welcome
 		nav.welcome__nav
 			.welcome__nav-login
-				a(href="#" target="_blank") Log in
+				a(href="#" target="_blank" id="auth-block") Авторизоваться
 		.welcome__section
 			.welcome__section-wrap
 				include ../parts/_person
@@ -39,9 +39,13 @@ block content
 				nav.welcome__btn
 					ul.welcome__btn-list
 						li.welcome__btn-item
-							a(href="#" target="_blank") На главную
+							a(href="/" id="backHome") На главную
 						li.welcome__btn-item
 							a(href="#" target="_blank") Войти
 	footer.footer-welcome
 		.footer__copyright &copy; Аня Илюшенко | создано с любовью в LoftSchool | 2016
+	.preloader
+		.preloader__spinner
+			.preloader__animation
+			.preloader__percents 0%
 

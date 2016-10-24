@@ -11,20 +11,29 @@ block content
 		.works__head
 			h2.works__head-title Мои работы
 		.works__slider
-			.works__slider-left
-				.works__slider-content
-					h3.works__slider-content-title Сайт школы онлайн образования
-					p Html, css, Javascript
-					button.works__slider-btn
-						a(href="#" target="_blank") 
-							+icon("link")
-							span Посмотреть сайт
-			.works__slider-right
-				.works__slider-top
-				.works__slider-bottom
-					.works__slider-bottom--arrow
-				.works__slider-bottom
-					.works__slider-bottom--arrow
+			.works__slider-description
+				h3 Сайт школы онлайн образования
+				p Html, css, Javascript
+				button.works__slider-btn
+					a(href="#" target="_blank") 
+						+icon("link")
+						span Посмотреть сайт
+			.works__slider-display
+				ul.works__slider-list
+					li.works__slider-item
+						a.works__slider-link
+							img.works__slider-img(src="/assets/img/work-1.png")
+					li.works__slider-item
+						a.works__slider-link
+							img.works__slider-img(src="/assets/img/work-2.png")
+					li.works__slider-item
+						a.works__slider-link
+							img.works__slider-img(src="/assets/img/work-3.png")
+					li.works__slider-item
+						a.works__slider-link
+							img.works__slider-img(src="/assets/img/work-4.png")
+			.works__slider-controls
+				a(href="#").slider-controls-top следующая
 		.works__report
 			.works__report__head
 				h2.works__report__head-title Что обо мне говорят

@@ -50,11 +50,11 @@
 		}
 
 		.icon-portf_arrow_down {
-				fill: rgba(#fff,.7);
-				position: absolute;
-				width: 30px;
-				left: 46%;
-				top: 350px;
+			fill: rgba(#fff,.7);
+			position: absolute;
+			width: 30px;
+			left: 49%;
+			top: 350px;
 		}
 	}
 
@@ -64,11 +64,5 @@
 	}
 } 
 
-.icon-hamburger {
-	width: 40px;
-	height:40px;
-	margin-right: 10px;
-	margin-top: 0;
-	fill: rgba(#fff,.7);
-}
+@import 'common/_menu';
 
