@@ -25,7 +25,7 @@
 			margin: auto;
 			z-index: 200;
 
-			&:active {
+			:active {
 				.mnu__toggle-topper {
 					top: 9px;
 					transform: rotate(-45deg);

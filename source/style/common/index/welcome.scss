@@ -6,12 +6,11 @@
 }
 
 .welcome__nav {
-	width: 1800px;
-	margin: 25px 100px;
 	display: flex;
 	justify-content: flex-end;
 
 	&-login {
+		margin: 25px 100px;
 		padding: 15px 30px;
 		background-color: rgba(255,255,255,.0);
 		border: 1px solid #fff;

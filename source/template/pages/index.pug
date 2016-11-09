@@ -10,38 +10,39 @@ block content
 	section.welcome
 		nav.welcome__nav
 			.welcome__nav-login
-				a(href="#" target="_blank" id="auth-block") Авторизоваться
-		.welcome__section
-			.welcome__section-wrap
-				include ../parts/_person
-				+social
-				nav.welcome__btn
-					ul.welcome__btn-list
-						li
-							a(href="/works.html" target="_blank") Мои работы
-						li
-							a(href="/about.html" target="_blank") Обо мне
-						li
-							a(href="/blog.html" target="_blank") Блог
-			.welcome__section-wrap
-				form.login
-					h2 Авторизация
-					.login__input
-						+input("text", "logged", "Логин", "login")
-					.login__input
-						+input("password", "password", "Пароль", "password")
-					.login__checkbox
-						+checkbox("human", "checkbox", "I am a human", "Я человек","check")
-					.login__radio
-						p Вы точно не робот?
-						+radio("robot", "approved" , "Yes", "Да" )
-						+radio("robot", "robot" , "No", "Не уверен" )
-				nav.welcome__btn
-					ul.welcome__btn-list
-						li.welcome__btn-item
-							a(href="/" id="backHome") На главную
-						li.welcome__btn-item
-							a(href="#" target="_blank") Войти
+				a.welcome__nav-btn Авторизоваться
+		.welcome__section.flip-container
+			.flipper
+				.welcome__section-wrap.front
+					include ../parts/_person
+					+social
+					nav.welcome__btn
+						ul.welcome__btn-list
+							li
+								a(href="/works.html") Мои работы
+							li
+								a(href="/about.html") Обо мне
+							li
+								a(href="/blog.html") Блог
+				.welcome__section-wrap.back
+					form.login
+						h2 Авторизация
+						.login__input
+							+input("text", "logged", "Логин", "login")
+						.login__input
+							+input("password", "password", "Пароль", "password")
+						.login__checkbox
+							+checkbox("human", "checkbox", "I am a human", "Я человек","check")
+						.login__radio
+							p Вы точно не робот?
+							+radio("robot", "approved" , "Yes", "Да" )
+							+radio("robot", "robot" , "No", "Не уверен" )
+					nav.welcome__btn
+						ul.welcome__btn-list
+							li.welcome__btn-item
+								a#backHome На главную
+							li.welcome__btn-item
+								a(href="#" target="_blank") Войти
 	footer.footer-welcome
 		.footer__copyright &copy; Аня Илюшенко | создано с любовью в LoftSchool | 2016
 	.preloader

@@ -5,6 +5,9 @@ include ../mixins/_social
 block variables
 	- var title = 'Обо мне'
 
+block additionalHeader
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Byz7a_yOH38pU5NAR1JhFb5E4EMbsYU&callback=initMap" defer)
+
 block content
 	include ../parts/_header
 	section.about
@@ -28,13 +31,18 @@ block content
 				.about__right-skills
 					h4 Frontend
 					.about__right-skills-wrap
-						.about__right-skills-item
-							span html 5
-							.about__right-skills-semicircle.about__right-skills-semicircle--html
-						.about__right-skills-item
-							p css 3
-						.about__right-skills-item
-							p Javascript
+						div(id="cont" data-pct="HTML 5")
+							svg(id="svg" width="140" height="140" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg")
+								circle(r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0")
+								circle(id="bar" r="45" cx="60" cy="60" fill="transparent" stroke-dasharray="75%" stroke-dashoffset="0")
+						div(id="cont" data-pct="CSS 3")
+							svg(id="svg" width="160" height="160" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg")
+							circle(r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0")
+							circle(id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0")
+						div(id="cont" data-pct="Javascript")
+							svg(id="svg" width="160" height="160" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg")
+							circle(r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0")
+							circle(id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0")
 					h4 Backend
 					.about__right-skills-wrap
 						.about__right-skills-content
@@ -51,24 +59,26 @@ block content
 							p git
 						.about__right-skills-content
 							p bower
-			.about__map
-				.about__map-content
-					.about__map-contact
-						.about__map-contact-title
-							h4 Контакты
-						ul.about__map-contact-list
-							li
-								+icon("skype")
-								p ann.ilu
-							li
-								+icon("envelope")
-								p ilushenko.anna@yandex.ru
-							li
-								+icon("phone")
-								p +7 (913) 010 42-52
-							li
-								+icon("map_marker")
-								p Новосибирск
+		.about__map
+			.about__map-content
+				.about__map-item
+					.map#map
+				.about__map-contact
+					.about__map-contact-title
+						h4 Контакты
+					ul.about__map-contact-list
+						li
+							+icon("skype")
+							p ann.ilu
+						li
+							+icon("envelope")
+							p ilushenko.anna@yandex.ru
+						li
+							+icon("phone")
+							p +7 (913) 010 42-52
+						li
+							+icon("map_marker")
+							p Новосибирск
 										
 
 	include ../parts/_footer
