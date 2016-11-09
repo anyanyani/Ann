@@ -139,18 +139,7 @@ $(document).ready(function() {
 	});
 });
 
-
-// autorization block (flip)
-$('.welcome__nav-login').on('click', function() {
-		$(this).hide();
-	});
-	$('#backHome').on('click', function (e) {
-		e.preventDefault();
-
-		$('.welcome__nav-btn').show();
-  });
-
-  // blur
+// blur
 
 
 // CIRCLE	
@@ -202,4 +191,17 @@ function initMap() {
 		icon: '/assets/img/map_marker.png',
   });
 
+}
+
+
+// flip
+
+document.getElementById('myCard').onclick = function() {
+	document.querySelector('#flip-toggle').classList.toggle('flip');
+	document.getElementsByClassName('welcome__nav-login')[0].style.opacity = 0;
+}
+
+document.getElementById('back').onclick = function() {
+	document.querySelector('#flip-toggle').classList.toggle('flip');
+	document.getElementsByClassName('welcome__nav-login')[0].style.opacity = 1;
 }

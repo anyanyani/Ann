@@ -48,21 +48,7 @@
 				height: 320px;
 				width: 100%;
 			}
-		}
-		
-		&-arrow {
-			display: flex;
-			justify-content: center;
-			position: relative;
-
-			svg {
-				fill: rgba(#fff,.7);
-				position: absolute;
-				width: 30px;
-				height: 28px;
-			}
-		}
-		
+		}		
 	}
 
 	.container {

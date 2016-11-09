@@ -9,9 +9,9 @@ block variables
 block content
 	section.welcome
 		nav.welcome__nav
-			.welcome__nav-login
+			.welcome__nav-login#myCard
 				a.welcome__nav-btn Авторизоваться
-		.welcome__section.flip-container
+		.welcome__section.flip-container#flip-toggle
 			.flipper
 				.welcome__section-wrap.front
 					include ../parts/_person
@@ -40,9 +40,9 @@ block content
 					nav.welcome__btn
 						ul.welcome__btn-list
 							li.welcome__btn-item
-								a#backHome На главную
+								a#back На главную
 							li.welcome__btn-item
-								a(href="#" target="_blank") Войти
+								a(href="#") Войти
 	footer.footer-welcome
 		.footer__copyright &copy; Аня Илюшенко | создано с любовью в LoftSchool | 2016
 	.preloader
